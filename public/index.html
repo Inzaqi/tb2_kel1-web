@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stana Karsa - Main Menu</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* CSS tambahan untuk memastikan tampilan responsif */
+    .card {
+      height: 100%;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Menambahkan sedikit spasi antar card */
+    .card-body {
+      padding: 20px;
+    }
+
+    /* Responsive untuk layar kecil */
+    @media (max-width: 768px) {
+      .col-md-3 {
+        width: 100%;
+      }
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center">
+      <h1 class="text-danger">Stana Karsa</h1>
+      <div class="d-flex">
+        <input type="text" class="form-control mr-2" placeholder="Search event">
+        <input type="text" class="form-control mr-2" placeholder="Jakarta">
+        <button class="btn btn-danger">Search</button>
+      </div>
+      <div class="d-flex align-items-center">
+        <a href="notifikasi.html" class="d-flex align-items-center text-decoration-none">
+          <img src="images/bell-icon.png" alt="Profile" class="rounded-circle ml-2" style="width: 30px; height: 30px;">
+          <span class="badge badge-danger" style="position: relative; top: -10px; right: 5px;">1</span>
+        </a>
+        <span class="mr-3">|</span>
+        <span class="mr-3">English</span>
+        <span class="mr-3">|</span>
+        <a href="profile.html" class="d-flex align-items-center text-decoration-none text-white">
+          <img src="images/profil.png" alt="Profile" class="rounded-circle ml-2" style="width: 30px; height: 30px;">
+          <span class="ml-2">Kelompok1</span>
+        </a>
+      </div>  
+    </div>
+    <div class="mt-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3>Events in Jakarta, ID</h3>
+        <a href="#" class="btn btn-link">See all</a>
+      </div>
+      <div class="row">
+        <!-- Event Cards -->
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="images/jmk48.png" class="card-img-top" alt="JMK48">
+            <div class="card-body">
+              <h5 class="card-title">JMK48 fest 2025</h5>
+              <p class="card-text">Hosted by: Ci Rusdi</p>
+              <p class="card-text">Sat, Dec-21-2:00PM WIB</p>
+              <p class="card-text">55 going | Free</p>
+              <a href="jmk48.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>  
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="images/eformula.png" class="card-img-top" alt="Formula E">
+            <div class="card-body">
+              <h5 class="card-title">Formula E Jakarta</h5>
+              <p class="card-text">Hosted by: FIA</p>
+              <p class="card-text">Sun, Mar-11-2:00PM WIB</p>
+              <p class="card-text">176 going | Rp.500.000.000</p>
+              <a href="formula-e.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="images/kicau.png" class="card-img-top" alt="Event 3">
+            <div class="card-body">
+              <h5 class="card-title">Kicau Mania Cup</h5>
+              <p class="card-text">Hosted by: Fuad kicauu</p>
+              <p class="card-text">Mon, Feb-21-2:00PM WIB</p>
+              <p class="card-text">44 going | Free</p>
+              <a href="kicau.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="images/tarkam.png" class="card-img-top" alt="Event 3">
+            <div class="card-body">
+              <h5 class="card-title">Liga Tarkam</h5>
+              <p class="card-text">Hosted by: FIFA</p>
+              <p class="card-text">Thu, May-28-2:00PM WIB</p>
+              <p class="card-text">16 going | Free</p>
+              <a href="kicau.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="images/f1.png" class="card-img-top" alt="Event 3">
+            <div class="card-body">
+              <h5 class="card-title">Formula 1 GP PIK 2</h5>
+              <p class="card-text">Hosted by: FIA</p>
+              <p class="card-text">Fri, Dec-20-2:00PM WIB</p>
+              <p class="card-text">365 going | RP.1.000.000.00</p>
+              <a href="kicau.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="images/mpl.png" class="card-img-top" alt="Event 3">
+            <div class="card-body">
+              <h5 class="card-title">MPL 2025</h5>
+              <p class="card-text">Hosted by: Moonton</p>
+              <p class="card-text">Sun, Mar-11-2:00PM WIB</p>
+              <p class="card-text">170 going | Free</p>
+              <a href="kicau.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="images/comic.png" class="card-img-top" alt="Event 3">
+            <div class="card-body">
+              <h5 class="card-title">Comic-con 2025</h5>
+              <p class="card-text">Hosted by: Comifuro.id</p>
+              <p class="card-text">Wed, Feb-21-2:00PM WIB</p>
+              <p class="card-text">44 going | Free</p>
+              <a href="kicau.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="images/coding.png" class="card-img-top" alt="Event 3">
+            <div class="card-body">
+              <h5 class="card-title">Coding expert</h5>
+              <p class="card-text">Hosted by: FIM</p>
+              <p class="card-text">Thu, May-28-2:00PM WIB</p>
+              <p class="card-text">16 going | Rp.1.000.000.00</p>
+              <a href="kicau.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-4">
+          <div class="row" id="eventCardsContainer">
+            <!-- Event cards akan dimasukkan di sini -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Start Your Own Event Section -->
+   <div class="mt-5 p-4">
+    <h2>Start your own event.</h2>
+    <p>Whatever your interest, from hiking and reading to networking and skill sharing, there are thousands of people who share it on Stana karsa.</p>
+    <a href="launch.html" class="btn btn-primary">Launch event</a>
+  </div>  
+
+  <!-- Upcoming Online Events Section -->
+  <div class="mt-5  p-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3>Upcoming online events</h3>
+      <a href="#" class="btn btn-link">See all</a>
+    </div>
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="images/webinar.png" class="card-img-top" alt="Webinar">
+          <div class="card-body">
+            <h5 class="card-title">Webinar career explore</h5>
+            <p class="card-text">Hosted by: Mercu Buana</p>
+            <p class="card-text">Sat, Dec-21-2:00PM WIB</p>
+            <p class="card-text">55 going | Free</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="images/growth.png" class="card-img-top" alt="Growth">
+          <div class="card-body">
+            <h5 class="card-title">Personal growth</h5>
+            <p class="card-text">Hosted by: Revou.id</p>
+            <p class="card-text">Sun, Mar-11-2:00PM WIB</p>
+            <p class="card-text">176 going | Free</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="images/jurnalis.png" class="card-img-top" alt="Webinar">
+            <div class="card-body">
+              <h5 class="card-title">Journalist training</h5>
+              <p class="card-text">Hosted by: KOMPAS.id</p>
+              <p class="card-text">Mon, Feb-21-2:00PM WIB</p>
+              <p class="card-text">44 going | Free</p>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="images/coding.png" class="card-img-top" alt="Growth">
+            <div class="card-body">
+              <h5 class="card-title">Coding expert</h5>
+              <p class="card-text">Hosted by: Google</p>
+              <p class="card-text">Thu, May-28-2:00PM WIB</p>
+              <p class="card-text">16 going | Free</p>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <!-- Footer -->
+ <div class="footer-section">
+  <!-- Your Account -->
+  <div>
+    <h6>Your Account</h6>
+    <ul class="list-style">
+      <li><a href="login.html">Sign In</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a href="affiliate.html">Become an Affiliate</a></li>
+    </ul>
+  </div>
+
+  <!-- Discover -->
+  <div>
+    <h6>Discover</h6>
+    <ul class="list-style">
+      <li><a href="groups.html">Groups</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li><a href="events.html">Online Events</a></li>
+    </ul>
+  </div>
+
+  <!-- Stana Karsa -->
+  <div>
+    <h6>Stana Karsa</h6>
+    <ul class="list-style">
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+    </ul>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+// Ambil data dari localStorage
+const events = JSON.parse(localStorage.getItem("events")) || [];
+
+// Container kartu event
+const eventCardsContainer = document.getElementById("eventCardsContainer");
+
+// Loop untuk menampilkan setiap event
+events.forEach(event => {
+  const card = document.createElement("div");
+  card.className = "col-md-3 mb-4"; // Menambahkan kolom dengan margin bawah
+  card.innerHTML = `
+    <div class="card">
+      <img src="images/csoon.png" class="card-img-top" alt="Event Image">
+      <div class="card-body">
+        <h5 class="card-title">${event.eventName}</h5>
+        <p class="card-text">Hosted by: ${event.theme}</p>
+        <p class="card-text">${event.dateTime}</p>
+        <p class="card-text">${event.attendeesLimit} going | ${event.price}</p>
+        <a href="details.html" class="btn btn-primary">Details</a>
+        <button class="btn btn-danger delete-btn mt-0">Delete</button> <!-- Tombol delete -->
+      </div>
+    </div>
+  `;
+  eventCardsContainer.appendChild(card);
+});
+
+// Menangani penghapusan event
+eventCardsContainer.addEventListener('click', function(e) {
+  if (e.target.classList.contains('delete-btn')) {
+    // Dapatkan nama event dari card yang ingin dihapus
+    const card = e.target.closest('.col-md-3');
+    const eventName = card.querySelector('.card-title').innerText;
+
+    // Ambil data event dari localStorage dan filter event yang ingin dihapus
+    let events = JSON.parse(localStorage.getItem("events")) || [];
+    events = events.filter(event => event.eventName !== eventName);
+
+    // Simpan kembali data yang sudah difilter
+    localStorage.setItem("events", JSON.stringify(events));
+
+    // Hapus card event dari tampilan
+    card.remove();
+  }
+});
+
+  </script>
+  
+  
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+    background-color: #212529; /* Dark background */
+    color: #ffffff; /* Text color */
+  }
+  
+  .card {
+    background-color: #ffffff; /* White background for cards */
+    color: #212529; /* Dark text color */
+  }
+  
+  .w-45 {
+    width: 45%;
+  }
+  
+
+  /* Untuk mengatur logo di tombol */
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #343a40; /* Warna latar belakang gelap */
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-section h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white; /* Warna teks putih */
+  }
+  
+  .list-style {
+    list-style-type: disc; /* Menampilkan titik (.) */
+    padding-left: 20px;
+  }
+  
+  .list-style li {
+    margin-bottom: 5px; /* Memberikan jarak antar item */
+  }
+  
+  /* Styling untuk link */
+  .list-style a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: white;          /* Warna putih untuk teks */
+    font-weight: 500;      /* Ketebalan teks */
+  }
+  
+  .list-style a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+    color: #f8f9fa;             /* Warna putih lebih terang saat hover */
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 110vh;          /* Tinggi minimum 100% viewport */
+  }
+  
+  .footer-section {
+    margin-top: auto;           /* Memaksa footer berada di bagian bawah */
+  }
+
+
+
+
+
+
+
+  

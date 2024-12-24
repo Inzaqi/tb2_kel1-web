@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stana Karsa - Event Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="d-flex mb-2">
+          <a href="index.html" class="btn btn-light">
+            <span>&larr;</span>
+          </a>
+        </div>  
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="text-danger">Stana Karsa</h1>
+        <div class="d-flex">
+          <input type="text" class="form-control mr-2" placeholder="Search event">
+          <input type="text" class="form-control mr-2" placeholder="Jakarta">
+          <button class="btn btn-danger">Search</button>
+        </div>
+        <div class="d-flex align-items-center">
+          <a href="notifikasi.html" class="d-flex align-items-center text-decoration-none">
+            <img src="images/bell-icon.png" alt="Profile" class="rounded-circle ml-2" style="width: 30px; height: 30px;">
+            <span class="badge badge-danger" style="position: relative; top: -10px; right: 5px;">1</span>
+          </a>
+          <span class="mr-3">|</span>
+          <span class="mr-3">English</span>
+          <span class="mr-3">|</span>
+          <a href="profile.html" class="d-flex align-items-center text-decoration-none text-white">
+            <img src="images/profil.png" alt="Profile" class="rounded-circle ml-2" style="width: 30px; height: 30px;">
+            <span class="ml-2">Kelompok1</span>
+          </a>
+        </div>        
+      </div>
+      <br>
+    <!-- Event Title -->
+    <div class="mb-4">
+      <h3 class="text-center font-weight-bold">JMK48 fest 2025</h3>
+    </div>
+
+    <!-- Event Media -->
+    <div class="d-flex mb-4">
+      <div class="mr-3">
+        <img src="images/jmk48.png" class="img-fluid mb-3" alt="JMK48 Event" style="width: 100%; max-width: 500px;">
+      </div>
+      <div>
+        <p><strong>Sat, Dec-21-2:00PM WIB</strong></p>
+        <p>Jakarta International Stadium (JIS)</p>
+        <p>Jl. Teronggg Raya No.33, Cilandak Bar, Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12430</p>
+        <img src="images/jis.png" class="img-fluid" alt="Event Map" style="width: 300%; max-width: 300px;">
+      </div>
+    </div>
+
+    <!-- Registration Form -->
+    <form>
+      <div class="form-group">
+        <label>Email (The event organizers will send further informations)</label>
+        <input type="email" class="form-control" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label>Phone number</label>
+        <input type="tel" class="form-control" placeholder="Enter phone number">
+      </div>
+      <div class="form-group">
+        <label>Seat</label>
+        <input type="text" class="form-control" placeholder="Enter seat preference">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="policyCheck">
+        <label class="form-check-label" for="policyCheck">I agree with all the policies</label>
+      </div>
+
+      <!-- Payment Methods -->
+      <h5>Payment Methods</h5>
+      <div class="form-check">
+        <input type="radio" name="paymentMethod" class="form-check-input" id="dana">
+        <label class="form-check-label" for="dana">
+          <img src="images/dana.png" width="30"> Dana
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="radio" name="paymentMethod" class="form-check-input" id="bca">
+        <label class="form-check-label" for="bca">
+          <img src="images/bca.png" width="30"> BCA
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="radio" name="paymentMethod" class="form-check-input" id="spot">
+        <label class="form-check-label" for="spot">
+          <img src="images/ots.png" width="30"> On The Spot
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-danger mt-4">Attend</button>
+    </form>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer-section">
+    <!-- Your Account -->
+    <div>
+      <h6>Your Account</h6>
+      <ul class="list-style">
+        <li><a href="login.html">Sign In</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="affiliate.html">Become an Affiliate</a></li>
+      </ul>
+    </div>
+  
+    <!-- Discover -->
+    <div>
+      <h6>Discover</h6>
+      <ul class="list-style">
+        <li><a href="groups.html">Groups</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="events.html">Online Events</a></li>
+      </ul>
+    </div>
+  
+    <!-- Stana Karsa -->
+    <div>
+      <h6>Stana Karsa</h6>
+      <ul class="list-style">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const email = document.querySelector('input[type="email"]').value;
+        const phoneNumber = document.querySelector('input[type="tel"]').value;
+        const seat = document.querySelector('input[placeholder="Enter seat preference"]').value;
+        const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').id;
+
+        const data = { email, phoneNumber, seat, paymentMethod };
+
+        try {
+            const response = await fetch('http://localhost:3000/attend', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                alert(result.message);
+            } else {
+                alert('Gagal mengirim data.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Terjadi kesalahan.');
+        }
+    });
+  </script>
+
+</body>
+</html>
